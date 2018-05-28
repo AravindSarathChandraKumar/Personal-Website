@@ -1,0 +1,6 @@
+{% extends 'personal/header.html' %}
+{% block content %}
+<h2>{{post.title}}</h2>
+<h6>published on:{{post.date}}</h6>
+{{post.body|safe|linebreaks}}
+{% endblock %}
